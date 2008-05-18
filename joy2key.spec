@@ -2,7 +2,7 @@ Name:			joy2key
 Version:		1.6.1
 # (Anssi) wrongly versioned tarball...
 %define tarfilever	1.6
-Release:		%mkrel 1
+Release:		%mkrel 2
 
 Summary:	Translate joystick events into keyboard events
 License:	GPLv2
@@ -17,6 +17,8 @@ Patch2:		accept-0-as-threshold.patch
 Patch3:		correct-string-freeing.patch
 Patch4:		process-args-fix.patch
 
+# Uses xwininfo to find the window.
+Requires:	xwininfo
 BuildRequires:	libx11-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
