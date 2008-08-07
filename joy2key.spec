@@ -2,7 +2,7 @@ Name:			joy2key
 Version:		1.6.1
 # (Anssi) wrongly versioned tarball...
 %define tarfilever	1.6
-Release:		%mkrel 2
+Release:		%mkrel 3
 
 Summary:	Translate joystick events into keyboard events
 License:	GPLv2
