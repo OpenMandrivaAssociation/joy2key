@@ -1,22 +1,13 @@
 Name:			joy2key
-Version:		1.6.1
-# (Anssi) wrongly versioned tarball...
-%define tarfilever	1.6
-Release:		%mkrel 3
+Version:		1.6.3
+Release:		%mkrel 1
 
 Summary:	Translate joystick events into keyboard events
 License:	GPLv2
 # keyboard emulator:
 Group:		Emulators
-URL:		http://interreality.org/~tetron/technology/joy2key/
-Source0:	http://interreality.org/~tetron/technology/joy2key/joy2key-%{tarfilever}.tar.gz
-# Debian patches:
-Patch0:		x-libs-in-standard-search-path.patch
-Patch1:		argtokey-implicit-declaration.patch
-Patch2:		accept-0-as-threshold.patch
-Patch3:		correct-string-freeing.patch
-Patch4:		process-args-fix.patch
-
+URL:		http://sourceforge.net/projects/joy2key/
+Source0:	http://downloads.sourceforge.net/joy2key/joy2key-%{version}.tar.bz2
 # Uses xwininfo to find the window.
 Requires:	xwininfo
 BuildRequires:	libx11-devel
@@ -29,11 +20,6 @@ terminal modes.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
-%patch4 -p1
 
 %build
 %configure2_5x
