@@ -1,6 +1,6 @@
 Name:			joy2key
 Version:		1.6.3
-Release:		%mkrel 2
+Release:		%mkrel 3
 
 Summary:	Translate joystick events into keyboard events
 License:	GPLv2
