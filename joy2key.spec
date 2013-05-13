@@ -1,6 +1,6 @@
 Name:			joy2key
 Version:		1.6.3
-Release:		%mkrel 3
+Release:		4
 
 Summary:	Translate joystick events into keyboard events
 License:	GPLv2
@@ -11,7 +11,6 @@ Source0:	http://downloads.sourceforge.net/joy2key/joy2key-%{version}.tar.bz2
 # Uses xwininfo to find the window.
 Requires:	xwininfo
 BuildRequires:	pkgconfig(x11)
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Joy2key will translate your joystick movements into the equivalent
