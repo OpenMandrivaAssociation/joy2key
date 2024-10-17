@@ -6,7 +6,7 @@ Summary:	Translate joystick events into keyboard events
 License:	GPLv2
 # keyboard emulator:
 Group:		Emulators
-URL:		http://sourceforge.net/projects/joy2key/
+URL:		https://sourceforge.net/projects/joy2key/
 Source0:	http://downloads.sourceforge.net/joy2key/joy2key-%{version}.tar.bz2
 # Uses xwininfo to find the window.
 Requires:	xwininfo
