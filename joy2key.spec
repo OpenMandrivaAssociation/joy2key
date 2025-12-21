@@ -10,6 +10,11 @@ URL:		https://sourceforge.net/projects/joy2key/
 Source0:	http://downloads.sourceforge.net/joy2key/joy2key-%{version}.tar.bz2
 # Uses xwininfo to find the window.
 Requires:	xwininfo
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(x11)
 
 %description
